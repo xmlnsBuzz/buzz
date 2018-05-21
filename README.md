@@ -1,2 +1,3 @@
 # buzz
-Settings Sync
+
+## Settings Sync

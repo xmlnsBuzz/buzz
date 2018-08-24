@@ -5,3 +5,5 @@
 ## CONTRIBUTING.md
 
 ## 8월 24일 push
+
+## 8월 24일 두 번째 push

@@ -1,0 +1,135 @@
+@charset "UTF-8";
+body {
+  background: #333;
+}
+
+.box {
+  background: white;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: auto;
+  top: 200px;
+  -webkit-animation-name: myanimation;
+          animation-name: myanimation;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  /** animation-iteration-count
+     * 
+     * animation의 반복회수를 지정한다.
+     * SYNTAX
+     * animation-iteration-count: 
+     * number|infinite|initial|inherit;
+     * 
+     * VALUE
+     * number : A number that defines how many times an animation should be played. Default value is 1
+     * infinite : Specifies that the animation should be played infinite times (for ever)
+     * initial : Sets this property to its default value.
+     * inherit : Inherits this property from its parent element.     */
+  -webkit-animation-iteration-count: 2s;
+          animation-iteration-count: 2s;
+  /** animation-direction
+     * 
+     * animation의 방향(시작지점과 종료지점)을 지정한다.
+     * 
+     * SYNTAX
+     * animation-direction: 
+     * normal|reverse|alternate|alternate-reverse|initial|inherit;
+     * 
+     * VALUE
+     * normal : Default value. The animation is played as normal (forwards)
+     * reverse : The animation is played in reverse direction (backwards)
+     * alternate : The animation is played forwards first, then backwards
+     * alternate-reverse : The animation is played backwards first, then forwards
+     * initial : Sets this property to its default value.
+     * inherit : Inherits this property from its parent element.
+     */
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  /** animation-timing-function
+     * 
+     * animation의 강약이나 완급을 지정한다.
+     * SYNTAX : 
+     * animation-timing-function: linear|ease|ease-in|ease-out|ease-in-out|step-start|step-end|steps(int,start|end)|cubic-bezier(n,n,n,n)|initial|inherit;
+     * 
+     */
+  -webkit-animation-timing-function: initial;
+          animation-timing-function: initial;
+  /**
+     * animation-fill-mode
+     * 
+     * SYNTAX
+     * animation-fill-mode:
+     * none|forwards|backwards|both|initial|inherit;
+     * animation이 완료된 시점에서 properties에 적용된 값을 지정한다. 예를 들어 12pt로 지정된 글자를 3초 동안 40pt 까지 커지게 했을 때 'forwards'값을 주면 원래 크기인 12pt로 복귀될 것이다.
+     */
+  -webkit-animation-fill-mode: initial;
+          animation-fill-mode: initial;
+}
+
+@-webkit-keyframes myanimation {
+  0% {
+    background: white;
+    left: 0px;
+    top: 0px;
+    border-radius: 0 0 0 0;
+  }
+  25% {
+    background: red;
+    left: 300px;
+    top: 0px;
+    border-radius: 50% 0 0 0;
+  }
+  50% {
+    background: green;
+    left: 300px;
+    top: 300px;
+    border-radius: 50% 50% 0 0;
+  }
+  75% {
+    background: blue;
+    left: 0px;
+    top: 300px;
+    border-radius: 50% 50% 50% 0;
+  }
+  100% {
+    background: white;
+    left: 0px;
+    top: 0px;
+    border-radius: 50% 50% 50%  50%;
+  }
+}
+
+@keyframes myanimation {
+  0% {
+    background: white;
+    left: 0px;
+    top: 0px;
+    border-radius: 0 0 0 0;
+  }
+  25% {
+    background: red;
+    left: 300px;
+    top: 0px;
+    border-radius: 50% 0 0 0;
+  }
+  50% {
+    background: green;
+    left: 300px;
+    top: 300px;
+    border-radius: 50% 50% 0 0;
+  }
+  75% {
+    background: blue;
+    left: 0px;
+    top: 300px;
+    border-radius: 50% 50% 50% 0;
+  }
+  100% {
+    background: white;
+    left: 0px;
+    top: 0px;
+    border-radius: 50% 50% 50%  50%;
+  }
+}
+/*# sourceMappingURL=transition.css.map */

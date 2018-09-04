@@ -1,0 +1,192 @@
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head><title>CSS animation-timing-function Property</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,source code,colors,demos,tips">
+<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, and XML.">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../css/w3css.css">
+
+
+<h2>Definition and Usage</h2>
+<p>The <code class="w3-codespan">animation-timing-function</code> specifies the speed curve of an animation.</p>
+<p>The speed curve defines the TIME an animation uses to change from one set of CSS styles to another.</p>
+<p>The speed curve is used to make the changes smoothly.</p>
+<div class="w3-responsive">
+<table class="w3-table-all">
+  <tr>
+    <th style="width:25%">Default value:</th>
+    <td>ease</td>
+  </tr>
+  <tr>
+    <th>Inherited:</th>
+    <td>no</td>
+  </tr>
+  <tr>
+    <th>Animatable:</th>
+    <td>no. <a href="css_animatable.asp">Read about <em>animatable</em></a>
+  </td>
+  </tr>
+  <tr>
+    <th>Version:</th>
+    <td>CSS3</td>
+  </tr>
+  <tr>
+    <th>JavaScript syntax:</th>
+    <td>  <i>object</i>.style.animationTimingFunction=&quot;linear&quot;
+<a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trycss3_js_animation-timing-function">Try it</a>
+</td>
+  </tr>
+</table>
+</div>
+<hr>
+
+<h2>Browser Support</h2>
+<p>The numbers in the table specify the first browser version that fully supports the property.</p>
+<p>Numbers followed by -webkit-, -moz-, or -o- specify the first version that worked with a prefix.</p>
+<div class="w3-responsive">
+<table class="browserref notranslate">
+  <tr>
+    <th style="width:22%;font-size:16px;text-align:left;">Property</th>
+    <th style="width:16%;" class="bsChrome" title="Chrome"></th>
+    <th style="width:16%;" class="bsEdge" title="Internet Explorer / Edge"></th>
+    <th style="width:16%;" class="bsFirefox" title="Firefox"></th>
+    <th style="width:16%;" class="bsSafari" title="Safari"></th>
+    <th style="width:16%;" class="bsOpera" title="Opera"></th>                
+  </tr>
+  <tr>
+    <td style="text-align:left;">animation-timing-function</td>
+    <td>43.0<br>4.0&nbsp;-webkit-</td>
+    <td>10.0</td>
+    <td>16.0<br>5.0&nbsp;-moz-</td>
+    <td>9.0<br>4.0&nbsp;-webkit-</td>
+    <td>30.0<br>15.0&nbsp;-webkit-<br>12.0 -o-</td>
+  </tr>
+</table>
+</div>
+<hr>
+<div style="overflow:auto;text-align:center">
+<!-- MidContent -->
+
+  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
+  <div id="snhb-mid_content-0"></div>
+    
+</div>
+<hr>
+<h2>CSS Syntax</h2>
+<div class="w3-code w3-border notranslate"><div>
+animation-timing-function: linear|ease|ease-in|ease-out|ease-in-out|step-start|step-end|steps(int,start|end)|cubic-bezier(<i>n</i>,<i>n</i>,<i>n</i>,<i>n</i>)|initial|inherit;</div></div>
+<p>The animation-timing-function uses a mathematical function, called the Cubic 
+Bezier 
+curve, to make the speed curve. You can use your own 
+values in this function, or use one of the pre-defined values:<br>
+</p>
+<h2>Property Values</h2>
+<div class="w3-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:20%">Value</th>
+    <th style="width:68%">Description</th>
+    <th>Play it</th>                
+  </tr>  
+  <tr>
+    <td>linear</td>
+    <td>The animation has the same speed from start to end</td>
+  <td><a target="_blank" class="w3-btn btnplayit" href="playit.asp?filename=playcss_animation-timing-function&preval=linear">Play it &raquo;</a></td>       
+  </tr>
+  <tr>
+    <td>ease</td>
+    <td>Default value. The animation has a slow start, then fast, before it ends slowly</td>
+  <td><a target="_blank" class="w3-btn btnplayit" href="playit.asp?filename=playcss_animation-timing-function&preval=ease">Play it &raquo;</a></td>        
+  </tr>
+  <tr>
+    <td>ease-in</td>
+    <td>The animation has a slow start</td>
+  <td><a target="_blank" class="w3-btn btnplayit" href="playit.asp?filename=playcss_animation-timing-function&preval=ease-in">Play it &raquo;</a></td>        
+  </tr>
+  <tr>
+    <td>ease-out</td>
+    <td>The animation has a slow end</td>
+  <td><a target="_blank" class="w3-btn btnplayit" href="playit.asp?filename=playcss_animation-timing-function&preval=ease-out">Play it &raquo;</a></td>            
+  </tr>
+  <tr>
+    <td>ease-in-out</td>
+    <td>The animation has both a slow start and a slow end</td>
+  <td><a target="_blank" class="w3-btn btnplayit" href="playit.asp?filename=playcss_animation-timing-function&preval=ease-in-out">Play it &raquo;</a></td>            
+  </tr>
+  <tr>
+    <td>step-start</td>
+    <td>Equivalent to steps(1, start)</td>
+  <td></td>
+    </tr>
+  <tr>
+    <td>step-end</td>
+    <td>Equivalent to steps(1, end)</td>
+  <td></td>    
+    </tr>
+  <tr>
+    <td>steps(int,start|end)</td>
+    <td>Specifies a stepping function, with two parameters. The first parameter specifies the number of intervals in the function. It must be a positive integer (greater than 0). The second parameter, which is optional, is either the value &quot;start&quot; or &quot;end&quot;, and specifies the point at which the change of values occur within the interval. If the second parameter is omitted, it is given the value &quot;end&quot;</td>
+  <td></td> 
+    </tr>
+  <tr>
+    <td><a href="func_cubic-bezier.asp">cubic-bezier(<i>n</i>,<i>n</i>,<i>n</i>,<i>n</i>)</a></td>
+    <td>Define your own values in the cubic-bezier function<br>
+ Possible values are numeric values from 0 to 1</td>
+  <td></td>
+  </tr>
+  <tr>
+    <td>initial</td>
+    <td>Sets this property to its default value. <a href="css_initial.asp">Read about <em>initial</em></a></td>
+  <td></td>
+    </tr>
+  <tr>
+    <td>inherit</td>
+    <td>Inherits this property from its parent element. <a href="css_inherit.asp">Read about <em>inherit</em></a></td>
+  <td></td>
+    </tr>
+</table>
+</div>
+<p><b>Tip:</b> Try the different values in the &quot;More Examples&quot; section below.</p>
+<hr>
+
+<h2>More Examples</h2>
+<div class="w3-example">
+<h3>Example</h3>
+<p>To better understand the different timing function values;<br>
+Here are five different &lt;div&gt; elements with five different values:</p>
+<div class="w3-code notranslate cssHigh">
+  #div1 {animation-timing-function: linear;}<br>
+#div2 {animation-timing-function: ease;}<br>
+#div3 {animation-timing-function: ease-in;}<br>
+#div4 {animation-timing-function: ease-out;}<br>
+#div5 {animation-timing-function: ease-in-out;}<br>
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=trycss3_animation-timing-function2">Try it Yourself &raquo;</a>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Same as the example above, but the speed curves are defined with the 
+cubic-bezier function:</p>
+<div class="w3-code notranslate cssHigh">
+  #div1 {animation-timing-function: cubic-bezier(0,0,1,1);}<br>
+#div2 {animation-timing-function: cubic-bezier(0.25,0.1,0.25,1);}<br>
+#div3 {animation-timing-function: cubic-bezier(0.42,0,1,1);}<br>
+#div4 {animation-timing-function: cubic-bezier(0,0,0.58,1);}<br>
+#div5 {animation-timing-function: cubic-bezier(0.42,0,0.58,1);}</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=trycss3_animation-timing-function3">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Related Pages</h2>
+<p>CSS tutorial: <a href="/css/css3_animations.asp">CSS Animations</a></p>
+<p>HTML DOM reference: <a href="/jsref/prop_style_animationtimingfunction.asp">animationTimingFunction property</a></p>
+<br>
+
+
+</body>
+</html>

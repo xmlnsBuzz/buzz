@@ -1,0 +1,54 @@
+body {
+    background: #333;
+}
+
+.box {
+    background: white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    top: 200px;
+    transition-property: background, border-radius;
+    transition-duration: .5s;
+    /* transition-delay: .5s; */
+    transition-timing-function: ease-in;
+
+    /*animation-name: myanimation;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;*/<p></p>
+}
+
+.box:hover{
+    background: red;
+    border-radius: 50%;
+}
+
+/*@keyframes myanimation {
+    0% {
+        background: white;
+        border-radius: 0 0 0 0;
+    }
+    
+    25% {
+        background: red;
+        border-radius: 50% 0 0 0 ;
+    }
+    
+    50% {
+        background: green;
+        border-radius:  50% 50% 0 0;
+    }
+    
+    75% {
+        background: blue;
+        border-radius: 50% 50% 50% 0;
+    }
+    
+    100% {
+        background: white;
+        border-radius: 50% 50% 50%  50%;
+    }
+} */

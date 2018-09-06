@@ -47,3 +47,34 @@ body{
     0%  {left: -1000px;}
     100%{left: 0px;}
 }
+
+.btn{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 1rem 2rem;
+    margin-top: 40px;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
+    transition-property: transform;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+
+}
+
+.btn:hover{
+    transform: rotateY(360deg);
+    transition-timing-function: ease-in-out;
+
+
+}
+
+@keyframes btn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}

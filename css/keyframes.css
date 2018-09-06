@@ -8,10 +8,17 @@ body {
   width: 200px;
   height: 200px;
   position: relative;
+<<<<<<< HEAD
   -webkit-animation-name: myanimation;
           animation-name: myanimation;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
+=======
+  -webkit-animation-name: kst;
+          animation-name: kst;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+>>>>>>> c2d757c10925db8d3cdf4f97c005f42c143afdc2
   /** animation-iteration-count
      * 
      * animation의 반복회수를 지정한다.
@@ -24,8 +31,13 @@ body {
      * infinite : Specifies that the animation should be played infinite times (for ever)
      * initial : Sets this property to its default value.
      * inherit : Inherits this property from its parent element.     */
+<<<<<<< HEAD
   -webkit-animation-iteration-count: 2s;
           animation-iteration-count: 2s;
+=======
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+>>>>>>> c2d757c10925db8d3cdf4f97c005f42c143afdc2
   /** animation-direction
      * 
      * animation의 방향(시작지점과 종료지점)을 지정한다.
@@ -51,8 +63,13 @@ body {
      * animation-timing-function: linear|ease|ease-in|ease-out|ease-in-out|step-start|step-end|steps(int,start|end)|cubic-bezier(n,n,n,n)|initial|inherit;
      * 
      */
+<<<<<<< HEAD
   -webkit-animation-timing-function: initial;
           animation-timing-function: initial;
+=======
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+>>>>>>> c2d757c10925db8d3cdf4f97c005f42c143afdc2
   /**
      * animation-fill-mode
      * 
@@ -62,7 +79,11 @@ body {
           animation-fill-mode: initial;
 }
 
+<<<<<<< HEAD
 @-webkit-keyframes myanimation {
+=======
+@-webkit-keyframes $anim-name {
+>>>>>>> c2d757c10925db8d3cdf4f97c005f42c143afdc2
   0% {
     background: white;
     left: 0px;
@@ -95,7 +116,11 @@ body {
   }
 }
 
+<<<<<<< HEAD
 @keyframes myanimation {
+=======
+@keyframes $anim-name {
+>>>>>>> c2d757c10925db8d3cdf4f97c005f42c143afdc2
   0% {
     background: white;
     left: 0px;

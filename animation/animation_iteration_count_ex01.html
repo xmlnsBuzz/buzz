@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    -webkit-animation: mymove 3s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 2; /* Safari 4.0 - 8.0 */
+    animation: mymove 3s;
+    animation-iteration-count: 2;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+</style>
+</head>
+<body>
+
+<h1>The animation-iteration-count Property</h1>
+
+<p>Play the animation two times:</p>
+
+<div></div>
+
+<p><strong>Note:</strong> The animation-iteration-count property is not supported in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

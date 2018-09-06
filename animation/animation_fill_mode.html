@@ -1,0 +1,159 @@
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head><title>CSS animation-fill-mode Property</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,source code,colors,demos,tips">
+<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, and XML.">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../css/w3css.css">
+
+
+<h2>Definition and Usage</h2>
+<p>The <code class="w3-codespan">animation-fill-mode</code> property specifies a style for the element when the animation is not playing (before 
+it starts, after it ends, or both).</p>
+<p>CSS animations do not affect the element before the first keyframe is played 
+or after the last keyframe is played. The <code class="w3-codespan">animation-fill-mode</code> property can override this 
+behavior. </p>
+<div class="w3-responsive">
+<table class="w3-table-all">
+  <tr>
+    <th style="width:25%">Default value:</th>
+    <td style="width:75%">none</td>
+  </tr>
+  <tr>
+    <th>Inherited:</th>
+    <td>no</td>
+  </tr>
+  <tr>
+    <th>Animatable:</th>
+    <td>no. <a href="css_animatable.asp">Read about <em>animatable</em></a>
+  </td>
+  </tr>
+  <tr>
+    <th>Version:</th>
+    <td>CSS3</td>
+  </tr>
+  <tr>
+    <th>JavaScript syntax:</th>
+    <td>  <i>object</i>.style.animationFillMode=&quot;forwards&quot;
+<a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trycss3_js_animation-fill-mode">Try it</a>
+</td>
+  </tr>
+</table>
+</div>
+<hr>
+
+<h2>Browser Support</h2>
+<p>The numbers in the table specify the first browser version that fully supports the property.</p>
+<p>Numbers followed by -webkit-, -moz-, or -o- specify the first version that worked with a prefix.</p>
+<div class="w3-responsive">
+<table class="browserref notranslate">
+  <tr>
+    <th style="width:20%;font-size:16px;text-align:left;">Property</th>
+    <th style="width:16%;" class="bsChrome" title="Chrome"></th>
+    <th style="width:16%;" class="bsEdge" title="Internet Explorer / Edge"></th>
+    <th style="width:16%;" class="bsFirefox" title="Firefox"></th>
+    <th style="width:16%;" class="bsSafari" title="Safari"></th>
+    <th style="width:16%;" class="bsOpera" title="Opera"></th>                
+  </tr>
+  <tr>
+    <td style="text-align:left;">animation-fill-mode</td>
+    <td>43.0<br>4.0&nbsp;-webkit-</td>
+    <td>10.0</td>
+    <td>16.0<br>5.0&nbsp;-moz-</td>
+    <td>4.0&nbsp;-webkit-</td>
+    <td>15.0&nbsp;-webkit-<br>12.1<br>12.0&nbsp;-o-</td>
+  </tr>
+</table>
+</div>
+<hr>
+<div style="overflow:auto;text-align:center">
+<!-- MidContent -->
+
+  <div id='div-gpt-ad-1493883843099-0' style="display: inline-block">
+    <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1493883843099-0'); });
+    </script>
+  </div>
+    
+</div>
+<hr>
+<h2>CSS Syntax</h2>
+<div class="w3-code w3-border notranslate"><div>
+animation-fill-mode: none|forwards|backwards|both|initial|inherit;</div></div>
+<h2>Property Values</h2>
+<div class="w3-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:20%">Value</th>
+    <th>Description</th>
+  </tr>  
+  <tr>
+    <td>none</td>
+    <td>Default value. Animation will not apply any styles to the element before or after it is executing</td>
+  </tr>
+  <tr>
+    <td>forwards</td>
+    <td>The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count)</td>
+  </tr>
+  <tr>
+    <td>backwards</td>
+    <td>The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during 
+    the 
+    animation-delay period</td>
+  </tr>
+  <tr>
+    <td>both</td>
+    <td>The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions </td>
+  </tr>
+  <tr>
+    <td>initial</td>
+    <td>Sets this property to its default value. <a href="css_initial.asp">Read about <em>initial</em></a></td>
+    </tr>
+  <tr>
+    <td>inherit</td>
+    <td>Inherits this property from its parent element. <a href="css_inherit.asp">Read about <em>inherit</em></a></td>
+    </tr>
+  </table>
+</div>
+<hr>
+
+<h2>More Examples</h2>
+<div class="w3-example">
+<h3>Example</h3>
+<p>Let the &lt;div&gt; element get the style values set by the first keyframe before 
+the animation starts (during the animation-delay period):</p>
+<div class="w3-code notranslate cssHigh">
+div {<br>&nbsp;&nbsp;&nbsp;
+animation-fill-mode: backwards;<br>} </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=trycss3_animation-fill-mode2">Try it Yourself &raquo;</a>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Let the &lt;div&gt; element get the style values set by the first keyframe before 
+the animation starts, and retain the style values from the last keyframe when 
+the animation ends:</p>
+<div class="w3-code notranslate cssHigh">
+div {<br>&nbsp;&nbsp;&nbsp;
+animation-fill-mode: both;<br>} </div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=trycss3_animation-fill-mode3">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Related Pages</h2>
+<p>CSS tutorial: <a href="/css/css3_animations.asp">CSS Animations</a></p>
+<p>HTML DOM reference: <a href="/jsref/prop_style_animationfillmode.asp">animationFillMode property</a></p>
+<br>
+
+<div class="w3-clear w3-center nextprev">
+<a class="w3-left w3-btn" href="css3_pr_animation-duration.asp">&#10094;<span class="w3-hide-small"> Previous</span></a>
+<a class="w3-btn" href="default.asp"><span class="w3-hide-small">Complete CSS </span>Reference</a>
+<a class="w3-right w3-btn" href="css3_pr_animation-iteration-count.asp"><span class="w3-hide-small">Next </span>&#10095;</a>
+</div>
+
+</body>
+</html>

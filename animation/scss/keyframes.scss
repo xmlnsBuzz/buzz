@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+$anim-name: kst;
+>>>>>>> c2d757c10925db8d3cdf4f97c005f42c143afdc2
 body {
     background: #333;
 }
@@ -7,8 +11,13 @@ body {
     width: 200px;
     height: 200px;
     position: relative;
+<<<<<<< HEAD
     animation-name: myanimation;
     animation-duration: 4s;
+=======
+    animation-name: $anim-name;
+    animation-duration: 5s;
+>>>>>>> c2d757c10925db8d3cdf4f97c005f42c143afdc2
     
     /** animation-iteration-count
      * 
@@ -23,7 +32,11 @@ body {
      * initial : Sets this property to its default value.
      * inherit : Inherits this property from its parent element.     */
     
+<<<<<<< HEAD
     animation-iteration-count: 1;
+=======
+    animation-iteration-count: infinite ;
+>>>>>>> c2d757c10925db8d3cdf4f97c005f42c143afdc2
     
     /** animation-direction
      * 
@@ -41,7 +54,11 @@ body {
      * initial : Sets this property to its default value.
      * inherit : Inherits this property from its parent element.
      */
+<<<<<<< HEAD
     // animation-direction: normal;
+=======
+    animation-direction: normal;
+>>>>>>> c2d757c10925db8d3cdf4f97c005f42c143afdc2
 
     /** animation-timing-function
      * 
@@ -51,7 +68,11 @@ body {
      * 
      */
 
+<<<<<<< HEAD
     // animation-timing-function: initial;
+=======
+    animation-timing-function: ease-in-out;
+>>>>>>> c2d757c10925db8d3cdf4f97c005f42c143afdc2
 
     /**
      * animation-fill-mode
@@ -62,6 +83,7 @@ body {
 
 }
 
+<<<<<<< HEAD
 /*@keyframes myanimation {
     0% {
         background: white;
@@ -99,6 +121,9 @@ body {
     }*/
 
     @keyframes myanimation {
+=======
+@keyframes $anim-name {
+>>>>>>> c2d757c10925db8d3cdf4f97c005f42c143afdc2
     0% {
         background: white;
         left: 0px;

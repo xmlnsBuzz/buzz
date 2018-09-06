@@ -1,0 +1,145 @@
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head><title>CSS animation-direction Property</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,source code,colors,demos,tips">
+<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, and XML.">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../css/w3css.css">
+
+
+<h2>Definition and Usage</h2>
+<p>The <code class="w3-codespan">animation-direction</code> property defines whether an animation should be played 
+forwards, backwards or in alternate cycles.</p>
+<div class="w3-responsive">
+<table class="w3-table-all">
+  <tr>
+    <th style="width:25%">Default value:</th>
+    <td>normal</td>
+  </tr>
+  <tr>
+    <th>Inherited:</th>
+    <td>no</td>
+  </tr>
+  <tr>
+    <th>Animatable:</th>
+    <td>no. <a href="css_animatable.asp">Read about <em>animatable</em></a>
+  </td>
+  </tr>
+  <tr>
+    <th>Version:</th>
+    <td>CSS3</td>
+  </tr>
+  <tr>
+    <th>JavaScript syntax:</th>
+    <td>  <i>object</i>.style.animationDirection=&quot;reverse&quot;
+<a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trycss3_js_animation-direction">Try it</a>
+</td>
+  </tr>
+</table>
+</div>
+<hr>
+
+<h2>Browser Support</h2>
+<p>The numbers in the table specify the first browser version that fully supports the property.</p>
+<p>Numbers followed by -webkit-, -moz-, or -o- specify the first version that worked with a prefix.</p>
+<div class="w3-responsive">
+<table class="browserref notranslate">
+  <tr>
+    <th style="width:20%;font-size:16px;text-align:left;">Property</th>
+    <th style="width:16%;" class="bsChrome" title="Chrome"></th>
+    <th style="width:16%;" class="bsEdge" title="Internet Explorer / Edge"></th>
+    <th style="width:16%;" class="bsFirefox" title="Firefox"></th>
+    <th style="width:16%;" class="bsSafari" title="Safari"></th>
+    <th style="width:16%;" class="bsOpera" title="Opera"></th>                
+  </tr>
+  <tr>
+    <td style="text-align:left;">animation-direction</td>
+    <td>43.0<br>4.0&nbsp;-webkit-</td>
+    <td>10.0</td>
+    <td>16.0<br>5.0&nbsp;-moz-</td>
+    <td>9.0<br>4.0&nbsp;-webkit-</td>
+    <td>30.0<br>15.0&nbsp;-webkit-<br>12.0&nbsp;-o-</td>
+  </tr>
+</table>
+</div>
+<hr>
+
+<h2>CSS Syntax</h2>
+<div class="w3-code w3-border notranslate"><div>
+animation-direction: normal|reverse|alternate|alternate-reverse|initial|inherit;</div></div>
+<h2>Property Values</h2>
+<div class="w3-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:20%">Value</th>
+    <th style="width:68%">Description</th>
+    <th>Play it</th>                
+  </tr>  
+  <tr>
+    <td>normal</td>
+    <td>Default value. The animation is played as normal (forwards)</td>
+  <td><a target="_blank" class="w3-btn btnplayit" href="playit.asp?filename=playcss_animation-direction&preval=normal">Play it &raquo;</a></td>       
+  </tr>
+  <tr>
+    <td>reverse</td>
+    <td>The animation is played in reverse direction (backwards)</td>
+  <td><a target="_blank" class="w3-btn btnplayit" href="playit.asp?filename=playcss_animation-direction&preval=reverse">Play it &raquo;</a></td>           
+  </tr>
+  <tr>
+    <td>alternate</td>
+    <td>The animation is played forwards first, then backwards</td>
+  <td><a target="_blank" class="w3-btn btnplayit" href="playit.asp?filename=playcss_animation-direction&preval=alternate">Play it &raquo;</a></td>           
+  </tr>
+  <tr>
+    <td>alternate-reverse</td>
+    <td>The animation is played backwards first, then forwards</td>
+  <td><a target="_blank" class="w3-btn btnplayit" href="playit.asp?filename=playcss_animation-direction&preval=alternate-reverse">Play it &raquo;</a></td>           
+  </tr>
+  <tr>
+    <td>initial</td>
+    <td>Sets this property to its default value. <a href="css_initial.asp">Read about <em>initial</em></a></td>
+  <td></td>
+    </tr>
+  <tr>
+    <td>inherit</td>
+    <td>Inherits this property from its parent element. <a href="css_inherit.asp">Read about <em>inherit</em></a></td>
+  <td></td>
+    </tr>
+  </table>
+</div>
+<hr>
+
+<h2>More Examples</h2>
+<div class="w3-example">
+<h3>Example</h3>
+<p>Play the animation backwards first, then forwards:</p>
+<div class="w3-code notranslate cssHigh">
+div {<br>&nbsp;&nbsp;&nbsp;
+animation-direction: alternate-reverse;<br>}
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=trycss3_animation-direction2">Try it Yourself &raquo;</a>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Play the animation backwards:</p>
+<div class="w3-code notranslate cssHigh">
+div {<br>&nbsp;&nbsp;&nbsp;
+animation-direction: reverse;<br>}
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=trycss3_animation-direction3">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Related Pages</h2>
+<p>CSS tutorial: <a href="/css/css3_animations.asp">CSS Animations</a></p>
+<p>HTML DOM reference: <a href="/jsref/prop_style_animationdirection.asp">animationDirection property</a></p>
+<br>
+
+
+</body>
+</html>

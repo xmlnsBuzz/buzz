@@ -5,7 +5,10 @@ body {
 
 table {
   border: none;
+<<<<<<< HEAD
   border-collapse: collapse;
+=======
+>>>>>>> 6702de98fdf989af82679515d06c47dad446b905
 }
 
 td {

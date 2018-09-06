@@ -1,0 +1,66 @@
+body {
+    background: #333;
+}
+
+.box {
+    background: white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    top: 200px;
+    transition-property: background, border-radius;
+    transition-duration: .5s;
+    /* transition-delay: .5s; */
+    transition-timing-function: ease-in-out;
+
+    /*animation-name: myanimation;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;*/
+}
+
+/** 아래 지정한 :active와 :hover 의 순서가 중요하다. 
+ * :active가 :hover 뒤에 나오면 onMouseOver 때 
+ * cursor가 'progress'로 보인다.
+ * 
+ * 그 이유는 link에 관련된 pseudo class 의 우선순위가
+ * :link, :visited, :hover, :active 순이기 때문이다.
+ */
+  
+.box:active{
+    background: red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.box:hover{
+    cursor: progress;
+}
+
+/*@keyframes myanimation {
+    0% {
+        background: white;
+        border-radius: 0 0 0 0;
+    }
+    
+    25% {
+        background: red;
+        border-radius: 50% 0 0 0 ;
+    }
+    
+    50% {
+        background: green;
+        border-radius:  50% 50% 0 0;
+    }
+    
+    75% {
+        background: blue;
+        border-radius: 50% 50% 50% 0;
+    }
+    
+    100% {
+        background: white;
+        border-radius: 50% 50% 50%  50%;
+    }
+} */

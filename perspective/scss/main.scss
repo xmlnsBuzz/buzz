@@ -1,0 +1,35 @@
+.ex1 {
+    perspective: 800px;
+}
+
+.ex2 {
+    perspective: 150px;
+}
+
+.cube {
+    font-size: 4em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-15deg) rotateY(45deg);
+}
+
+.side {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    background: rgba(100,100,100,0.5);
+    border: 5px solid red;
+    outline: 1px solid white;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 2em;
+}
+
+
+ .front {transform: translateZ(1em);}
+ .bottom {transform: rotateX(-90deg) translateZ(1em);}
+ .left {transform: rotateY(-90deg) translateZ(1em);}
+ .right {transform: rotateY(90deg) translateZ(1em);}
+ .top {transform: rotateX(90deg) translateZ(1em);}
+ .back {transform: rotateY(-180deg) translateZ(1em);}

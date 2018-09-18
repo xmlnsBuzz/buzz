@@ -1,0 +1,63 @@
+.ex1 {
+  -webkit-perspective: 800px;
+          perspective: 800px;
+}
+
+.ex2 {
+  -webkit-perspective: 150px;
+          perspective: 150px;
+}
+
+.cube {
+  font-size: 4em;
+  width: 2em;
+  margin: 1.5em auto;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(-15deg) rotateY(45deg);
+          transform: rotateX(-15deg) rotateY(45deg);
+}
+
+.side {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background: rgba(100, 100, 100, 0.5);
+  border: 5px solid red;
+  outline: 1px solid white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  line-height: 2em;
+}
+
+.front {
+  -webkit-transform: translateZ(1em);
+          transform: translateZ(1em);
+}
+
+.bottom {
+  -webkit-transform: rotateX(-90deg) translateZ(1em);
+          transform: rotateX(-90deg) translateZ(1em);
+}
+
+.left {
+  -webkit-transform: rotateY(-90deg) translateZ(1em);
+          transform: rotateY(-90deg) translateZ(1em);
+}
+
+.right {
+  -webkit-transform: rotateY(90deg) translateZ(1em);
+          transform: rotateY(90deg) translateZ(1em);
+}
+
+.top {
+  -webkit-transform: rotateX(90deg) translateZ(1em);
+          transform: rotateX(90deg) translateZ(1em);
+}
+
+.back {
+  -webkit-transform: rotateY(-180deg) translateZ(1em);
+          transform: rotateY(-180deg) translateZ(1em);
+}
+/*# sourceMappingURL=main.css.map */

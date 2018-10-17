@@ -1,0 +1,141 @@
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head><title>CSS flex property</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
+<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, and XML.">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../css/w3css.css">
+
+<h2>Definition and Usage</h2>
+
+<p>The <code class="w3-codespan">flex</code> property is a shorthand property for:</p>
+<ul>
+  <li><a href="css3_pr_flex-grow.asp">flex-grow</a></li>
+  <li><a href="css3_pr_flex-shrink.asp">flex-shrink</a></li>
+  <li><a href="css3_pr_flex-basis.asp">flex-basis</a></li>
+</ul>
+<p>The <code class="w3-codespan">flex</code> property sets the flexible length on flexible items.</p>
+
+<p><b>Note:</b> If the element is not a flexible item, the <code class="w3-codespan">flex</code> property has no effect.</p>
+
+<div class="w3-responsive">
+<table class="w3-table-all">
+  <tr>
+    <th style="width:25%">Default value:</th>
+    <td>0 1 auto</td>
+  </tr>
+  <tr>
+    <th>Inherited:</th>
+    <td>no</td>
+  </tr>
+  <tr>
+    <th>Animatable:</th>
+    <td>yes, <i>see individual properties</i>. <a href="css_animatable.asp">Read about <em>animatable</em></a>
+</td>
+  </tr>
+  <tr>
+    <th>Version:</th>
+    <td>CSS3</td>
+  </tr>
+  <tr>
+    <th>JavaScript syntax:</th>
+    <td>  <i>object</i>.style.flex=&quot;1&quot;
+<a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trycss3_js_flex">Try it</a>
+    </td>
+  </tr>
+</table>
+</div>
+<hr>
+
+<h2>Browser Support</h2>
+<p>The numbers in the table specify the first browser version that fully supports the property.</p>
+<p>Numbers followed by -webkit-, -ms- or -moz- specify the first version that worked with a prefix.</p>
+<div class="w3-responsive">
+<table class="browserref notranslate">
+  <tr>
+    <th style="width:20%;font-size:16px;text-align:left;">Property</th>
+    <th style="width:16%;" class="bsChrome" title="Chrome"></th>
+    <th style="width:16%;" class="bsEdge" title="Internet Explorer / Edge"></th>
+    <th style="width:16%;" class="bsFirefox" title="Firefox"></th>
+    <th style="width:16%;" class="bsSafari" title="Safari"></th>
+    <th style="width:16%;" class="bsOpera" title="Opera"></th>                
+  </tr>
+  <tr>
+    <td style="text-align:left;">flex</td>
+    <td>29.0<br>21.0&nbsp;-webkit-</td>
+    <td>11.0<br>10.0&nbsp;-ms-</td>
+    <td>28.0<br>18.0&nbsp;-moz-</td>
+    <td>9.0<br>6.1&nbsp;-webkit-</td>
+    <td>17.0</td>
+  </tr>
+</table>
+</div>
+<hr>
+<div style="overflow:auto;text-align:center">
+<!-- MidContent -->
+
+  <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
+  <div id="snhb-mid_content-0"></div>
+    
+</div>
+<hr>
+<h2>CSS Syntax</h2>
+<div class="w3-code w3-border notranslate"><div>
+flex: <i>flex-grow</i> <i>flex-shrink</i> <i>flex-basis</i>|auto|initial|inherit;</div></div>
+
+<h2>Property Values</h2>
+<div class="w3-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:22%">Value</th>
+    <th style="width:78%">Description</th>
+  </tr>
+  <tr>
+    <td><em><a href="css3_pr_flex-grow.asp">flex-grow</a></em></td>
+    <td>A number specifying how much the item will grow relative to the rest of the flexible items</td>
+    </tr>
+  <tr>
+    <td><em><a href="css3_pr_flex-shrink.asp">flex-shrink</a></em></td>
+    <td>A number specifying how much the item will shrink relative to the rest of the flexible items</td>
+    </tr>
+  <tr>
+    <td><em><a href="css3_pr_flex-basis.asp">flex-basis</a></em></td>
+    <td>The length of the item. Legal values: "auto", "inherit", or a number followed by "%", "px", "em" or any other length unit</td>
+    </tr>
+  <tr>
+    <td>auto</td>
+    <td>Same as 1 1 auto.</td>
+    </tr>
+    <tr>
+    <td>initial</td>
+    <td>Same as 0 1 auto. <a href="css_initial.asp">Read about <em>initial</em></a></td>
+    </tr>
+  <tr>
+    <td>none</td>
+    <td>Same as 0 0 auto.</td>
+    </tr>
+  <tr>
+    <td>inherit</td>
+    <td>Inherits this property from its parent element. <a href="css_inherit.asp">Read about <em>inherit</em></a></td>
+    </tr>
+  </table>
+</div>
+<hr>
+
+<h2>Related Pages</h2>
+<p>CSS Tutorial: <a href="/css/css3_flexbox.asp">CSS Flexible Box</a></p>
+<p>CSS Reference: <a href="css3_pr_flex-basis.asp">flex-basis property</a></p>
+<p>CSS Reference: <a href="css3_pr_flex-direction.asp">flex-direction property</a></p>
+<p>CSS Reference: <a href="css3_pr_flex-flow.asp">flex-flow property</a></p>
+<p>CSS Reference: <a href="css3_pr_flex-grow.asp">flex-grow property</a></p>
+<p>CSS Reference: <a href="css3_pr_flex-shrink.asp">flex-shrink property</a></p>
+<p>CSS Reference: <a href="css3_pr_flex-wrap.asp">flex-wrap property</a></p>
+<p>HTML DOM reference: <a href="/jsref/prop_style_flex.asp">flex property</a></p>
+
+
+</body>
+</html>

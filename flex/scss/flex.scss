@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    width: 500px;
+    border: 1px solid green;
+    flex-direction: row-reverse;
+}
+
+.item1 {
+    border: 1px solid red;
+    flex: 1;
+}
+.item2 {
+    border: 1px solid red;
+    flex: 1;
+}
+.item3 {
+    border: 1px solid red;
+    flex: 2;
+}
+.item4 {
+    border: 1px solid red;
+    flex: 1;
+}
+.item5 {
+    border: 1px solid red;
+    flex: 1;
+}
